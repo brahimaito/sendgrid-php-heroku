@@ -1,4 +1,5 @@
 <?php
+echo "V1";
     require 'vendor/autoload.php';
 
     $from = new SendGrid\Email("Example User", getenv('brahimaito@gmail.com'));
