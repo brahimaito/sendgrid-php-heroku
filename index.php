@@ -7,7 +7,7 @@
     $content = new SendGrid\Content("text/plain", "Hello from sendgrid-php");
     $mail = new SendGrid\Mail($from, $subject, $to, $content);
     
-    $apiKey = getenv('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');
+    $apiKey = getenv('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');
     $sg = new \SendGrid($apiKey);
     
     $response = $sg->client->mail()->send()->post($mail);
