@@ -4,8 +4,8 @@
     "repository": "https://github.com/pangaunn/sendgrid-php-heroku",
     "addons": [],
     "env": {
-        "SENDGRID_API_KEY": "",
-        "FROM_EMAIL": "",
-        "TO_EMAIL": ""
+        "SENDGRID_API_KEY": "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",
+        "FROM_EMAIL": "brahimaito@gmail.com",
+        "TO_EMAIL": "zizorify@gmail.com"
     }
   }
