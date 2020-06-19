@@ -1,14 +1,13 @@
 <?php
-echo "V1";
     require 'vendor/autoload.php';
 
-    $from = new SendGrid\Email("Example User", getenv('brahimaito@gmail.com'));
+    $from = new SendGrid\Email("Example User", getenv('FROM_EMAIL'));
     $subject = "Hello from sendgrid-php";
-    $to = new SendGrid\Email("Example User", getenv('zizorify@gmail.com'));
+    $to = new SendGrid\Email("Example User", getenv('TO_EMAIL'));
     $content = new SendGrid\Content("text/plain", "Hello from sendgrid-php");
     $mail = new SendGrid\Mail($from, $subject, $to, $content);
     
-    $apiKey = getenv('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');
+    $apiKey = getenv('SENDGRID_API_KEY');
     $sg = new \SendGrid($apiKey);
     
     $response = $sg->client->mail()->send()->post($mail);
